@@ -59,7 +59,8 @@ function net = gamain()
             pop{r}.accumFitness = totalFit;
         end
         %selecciono método de reemplazo
-        pop  = feval(replaceMethod,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, selMixCriteria, selMixN);
+        pop  = feval(replaceMethod,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, g, selMixCriteria, selMixN);
+
         pmut = mutAdaptation*pmut;
 
     end
