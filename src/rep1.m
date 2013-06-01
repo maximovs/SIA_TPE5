@@ -1,4 +1,4 @@
-function newPop = rep1(pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta)
+function newPop = rep1(pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net)
 	newPop = cell(populationSize,1);
 		for i = 1:floor(populationSize/2)
 	 		%selecciono 2 con algún método.
@@ -14,7 +14,7 @@ function newPop = rep1(pop,populationSize, toReplace, selCriteria, repCriteria, 
         	%#TODO: se backtrackea
         	for j=1:2
         		if(rand(1,1)<pbackprop)
-        			sel{j} = backProp(sel{j},txFun,beta);
+        			sel{j} = backProp(sel{j},txFun,beta,net);
         		endif
         	end
 

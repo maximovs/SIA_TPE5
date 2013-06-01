@@ -1,4 +1,6 @@
-function newNet = backProp(net,txFun,beta)
+function newSub = backProp(sub,txFun,beta, net)
+	newSub = sub;
+	net = putWs(net,sub.Ws);
 	epochs = 100;
 	trainSet = net.trainSet;
 	%calculas los o de cada capa
@@ -22,5 +24,5 @@ function newNet = backProp(net,txFun,beta)
 	    net = updateLrnRate(net, epochError);
 	    net.epochErrors(j) = epochError;
 	end
-	newNet = net;
+	newSub.Ws = getWs(net);
 endfunction

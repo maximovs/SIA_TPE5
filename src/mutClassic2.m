@@ -1,8 +1,8 @@
-function newNet = mutClassic2(net,pmut)
-	newNet = net;
-	if(rand(1,1)<pmut)
-		aux = rem(floor(rand(1,1)*3571),net.size)+1;
-		newNet = putValue(net,aux,smartRand());
-	endif
-
+function newSub = mutClassic2(sub,pmut)
+	newSub = sub;
+	for i=1:sub.size
+		if(rand(1,1)<pmut/sub.size)
+			newSub.Ws(i) = smartRand();
+		endif
+	end
 endfunction
