@@ -15,11 +15,13 @@ function net = gamain()
     pmut = properties.pmut;
     mutAdaptation = properties.mutAdaptation;
     pbackprop = properties.pbackprop;
+    selMixCriteria = properties.selMixCriteria;
+    selMixN = properties.selMixN;
 
     beta=0.8;
     inputSize = 2;
     lrnStrategy=3;
-    epochs=10;
+    epochs=50;
     M = 9;
     H = 2;
     momentum=0;
@@ -57,7 +59,7 @@ function net = gamain()
             pop{r}.accumFitness = totalFit;
         end
         %selecciono método de reemplazo
-        pop  = feval(replaceMethod,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net);
+        pop  = feval(replaceMethod,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, selMixCriteria, selMixN);
         pmut = mutAdaptation*pmut;
 
     end

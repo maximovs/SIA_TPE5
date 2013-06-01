@@ -1,8 +1,8 @@
-function newPop = rep1(pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net)
+function newPop = rep1(pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, selMixCriteria, selMixN)
 	newPop = cell(populationSize,1);
 		for i = 1:floor(populationSize/2)
 	 		%selecciono 2 con algún método.
-        	sel = feval(strcat('sel', selCriteria), pop, populationSize, 2, totalFit);
+        	sel = feval(strcat('sel', selCriteria), pop, populationSize, 2, totalFit, selMixN, selMixCriteria);
         	if(rand(1,1)<=pcross)
         		%se produce el cross
         		sel = feval(strcat('cross', crossover),sel);

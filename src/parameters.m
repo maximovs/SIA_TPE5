@@ -2,8 +2,8 @@ function parameters = parameters()
 	parameters.inFileOrOp= 'TimeSerie_G7.mat';
 	parameters.txFun= 'exponential';
 	parameters.lrnRate= 0.8;
-	parameters.populationSize= 20;
-	parameters.generations= 20;
+	parameters.populationSize= 10;
+	parameters.generations= 10;
 	parameters.G= 0.8;
 	parameters.replaceMethod= 'rep1';
 	parameters.selCriteria= 'Ruleta';
@@ -14,4 +14,6 @@ function parameters = parameters()
 	parameters.pmut=	0.2;
 	parameters.mutAdaptation= 1;
 	parameters.pbackprop= 0.02;
+	parameters.selMixCriteria= 'Ruleta';
+	parameters.selMixN= 1;
 endfunction
