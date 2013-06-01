@@ -1,4 +1,10 @@
-function graph(net, file, txFun, beta, from, to)
+function graph(net, from, to)
+	properties = graphParameters();
+  file = properties.file;
+  txFun = properties.txFun;
+  beta = properties.beta;
+
+
 	values = load(file);
 	values = values.x;
 	net.min = min(values);

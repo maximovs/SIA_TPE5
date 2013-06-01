@@ -1,8 +1,25 @@
-function net = gamain(inFileOrOp,txFun,lrnRate,populationSize,generations, G, replaceMethod, selCriteria, repCriteria, crossover, pcross, mutation, pmut, mutAdaptation, pbackprop)
+function net = gamain()
+    properties = parameters();
+    inFileOrOp = properties.inFileOrOp;
+    txFun = properties.txFun;
+    lrnRate = properties.lrnRate;
+    populationSize = properties.populationSize;
+    generations = properties.generations;
+    G = properties.G;
+    replaceMethod = properties.replaceMethod;
+    selCriteria = properties.selCriteria;
+    repCriteria = properties.repCriteria;
+    crossover = properties.crossover;
+    pcross = properties.pcross;
+    mutation = properties.mutation;
+    pmut = properties.pmut;
+    mutAdaptation = properties.mutAdaptation;
+    pbackprop = properties.pbackprop;
+
     beta=0.8;
     inputSize = 2;
     lrnStrategy=3;
-    epochs=50;
+    epochs=10;
     M = 9;
     H = 2;
     momentum=0;
