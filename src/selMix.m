@@ -1,4 +1,4 @@
-function sel = selMix(pop, populationSize, toSelect, totalFit, N, selCriteria)
+function sel = selMix(pop, populationSize, toSelect, totalFit, generation, N, selCriteria)
 	if N > populationSize
 		N = populationSize;
 	endif
