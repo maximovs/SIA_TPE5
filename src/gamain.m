@@ -2,7 +2,7 @@ function net = gamain(inFileOrOp,txFun,lrnRate,populationSize,generations, G, re
     beta=0.8;
     inputSize = 2;
     lrnStrategy=3;
-    epochs=100;
+    epochs=50;
     M = 9;
     H = 2;
     momentum=0;
@@ -32,12 +32,18 @@ function net = gamain(inFileOrOp,txFun,lrnRate,populationSize,generations, G, re
             pop{r}.accumFitness = totalFit;
         end
         pop = sortPopulation(pop, populationSize);
+        fit = pop{1}.fitness;
+        res = fit
         %selecciono método de reemplazo
-        pop  = feval(replaceMethod,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit);
+        pop  = feval(replaceMethod,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta);
        
 
     end
-
+     for r = 1:populationSize
+            pop{r} = calculateFitness(pop{r},txFun,beta);
+            totalFit += pop{r}.fitness;
+            pop{r}.accumFitness = totalFit;
+        end
     pop = sortPopulation(pop, populationSize);
     net = pop{1};
 endfunction

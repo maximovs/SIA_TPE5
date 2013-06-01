@@ -15,7 +15,7 @@ function newNet = updateWeights(net,in,txFun, beta)
 			dW = dW*eta + alpha*net.lastDWs{i+1};
 			net.lastDWs{i+1} = dW;
 		else
-			dW = dW*eta
+			dW = dW*eta;
 		endif
 
 		net.weights{i+1} = net.weights{i+1} + dW;
