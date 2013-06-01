@@ -31,12 +31,14 @@ function net = gamain(inFileOrOp,txFun,lrnRate,populationSize,generations, G, re
             net = putWs(net, pop{r}.Ws);
             net = calculateFitness(net,txFun,beta);
             pop{r}.fitness = net.fitness;
-            totalFit += pop{r}.fitness;
-            pop{r}.accumFitness = totalFit;
         end
         pop = sortPopulation(pop, populationSize);
         fit = pop{1}.fitness;
         res = fit
+        for r = 1:populationSize
+            totalFit += pop{r}.fitness;
+            pop{r}.accumFitness = totalFit;
+        end
         %selecciono método de reemplazo
         pop  = feval(replaceMethod,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net);
         pmut = mutAdaptation*pmut;
@@ -46,8 +48,6 @@ function net = gamain(inFileOrOp,txFun,lrnRate,populationSize,generations, G, re
         net = putWs(net, pop{r}.Ws);
         net = calculateFitness(net,txFun,beta);
         pop{r}.fitness = net.fitness;
-        totalFit += pop{r}.fitness;
-        pop{r}.accumFitness = totalFit;
     end
     pop = sortPopulation(pop, populationSize);
     net = putWs(net,pop{1}.Ws);
