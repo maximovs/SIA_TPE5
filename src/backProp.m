@@ -1,7 +1,7 @@
-function newSub = backProp(sub,txFun,beta, net)
+function newSub = backProp(sub,txFun,beta, net, epochs)
 	newSub = sub;
 	net = putWs(net,sub.Ws);
-	epochs = 100;
+	%epochs = 10;
 	trainSet = net.trainSet;
 	%calculas los o de cada capa
     net.epochErrors = zeros(epochs,1);

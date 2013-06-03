@@ -1,4 +1,5 @@
 function sel = selUniversal(pop, populationSize, toSelect, totalFit)
+	pop = setAccumFitness(pop, populationSize);
 	sel = cell(toSelect,1);
 	rs = rand(1,1)*totalFit/toSelect;
 	for i=1:toSelect

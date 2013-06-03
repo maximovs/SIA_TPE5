@@ -1,4 +1,4 @@
-function newPop = rep1(pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, generation, selMixCriteria, selMixN)
+function newPop = rep1(epochs, pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, generation, selMixCriteria, selMixN)
 	newPop = cell(populationSize,1);
 		for i = 1:floor(populationSize/2)
 	 		%selecciono 2 con algún método.
@@ -12,10 +12,10 @@ function newPop = rep1(pop,populationSize, toReplace, selCriteria, repCriteria, 
         	sel{1} = feval(strcat('mut', mutation), sel{1}, pmut);
         	sel{2} = feval(strcat('mut', mutation), sel{2}, pmut);
 
-        	%#TODO: se backtrackea
+        	%#TODO: se backpropaguea
         	for j=1:2
         		if(rand(1,1)<pbackprop)
-        			sel{j} = backProp(sel{j},txFun,beta,net);
+        			sel{j} = backProp(sel{j},txFun,beta,net,epochs);
         		endif
         	end
 

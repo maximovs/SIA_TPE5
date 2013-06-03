@@ -1,4 +1,4 @@
-function newPop = rep3(pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, generation, selMixCriteria, selMixN)
+function newPop = rep3(epochs, pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, generation, selMixCriteria, selMixN)
 	K = toReplace;
     mediumPop = cell(populationSize+K,1);
     for i=1:populationSize
@@ -30,7 +30,7 @@ function newPop = rep3(pop,populationSize, toReplace, selCriteria, repCriteria, 
     %se backtrackea
     for j=populationSize+1:populationSize+K
         if(rand(1,1)<pbackprop)
-            mediumPop{j} = backProp(mediumPop{j},txFun,beta,net);
+            mediumPop{j} = backProp(mediumPop{j},txFun,beta,net, epochs);
         endif
     end
 %---
@@ -42,7 +42,6 @@ function newPop = rep3(pop,populationSize, toReplace, selCriteria, repCriteria, 
         end
         mediumPop = sortPopulation(mediumPop, populationSize+K);
         fit = mediumPop{1}.fitness;
-        res = fit
         for r = 1:populationSize+K
             totalFit += mediumPop{r}.fitness;
             mediumPop{r}.accumFitness = totalFit;

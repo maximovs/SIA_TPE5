@@ -1,4 +1,4 @@
-function newPop = rep2(pop, populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, selMixCriteria, selMixN)
+function newPop = rep2(epochs, pop, populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, selMixCriteria, selMixN)
     K = toReplace;
     if rem(K, 2) == 1
         K = K-1;
@@ -25,7 +25,7 @@ function newPop = rep2(pop, populationSize, toReplace, selCriteria, repCriteria,
         endif
         %Se backpropaguea
         if(rand(1,1)<pbackprop)
-            children{i} = backProp(children{i},txFun,beta,net);
+            children{i} = backProp(children{i},txFun,beta,net, epochs);
         endif
     end
     survivors = feval(strcat('sel', selCriteria), pop, populationSize, populationSize-K, totalFit, selMixN, selMixCriteria);

@@ -17,25 +17,22 @@ function net = gamain()
     pbackprop = properties.pbackprop;
     selMixCriteria = properties.selMixCriteria;
     selMixN = properties.selMixN;
+    minError = properties.minError;
+    breakMethod = properties.breakMethod;
 
     beta=0.8;
     inputSize = 2;
     lrnStrategy=3;
-    epochs=50;
+    epochs=100;
     M = 9;
     H = 2;
     momentum=0;
     alpha=0.5;
-    toReplace = floor(G*populationSize);
+    toReplace = floor(G*populationSize/2)*2;
     net = createNet(inputSize, M, H, lrnRate, lrnStrategy, momentum, alpha);
     net.amp = 1;
-    if(strcmp(inFileOrOp,'and') || strcmp(inFileOrOp ,'or') || strcmp(inFileOrOp,'par') || strcmp(inFileOrOp,'xor'))
-        trainSet = feval(strcat(inFileOrOp, num2str(inputSize)));
-        net.trainSet = trainSet;
-    else
-        net = getTrainSet(net, inFileOrOp);
-        trainSet = net.trainSet;
-    endif
+    net = getTrainSet(net, inFileOrOp);
+    trainSet = net.trainSet;
     % Init population
     pop = cell(populationSize,1);
     for i = 1:populationSize
@@ -43,32 +40,72 @@ function net = gamain()
         sub.Ws = (rand(net.size,1) - 0.5)*10;
         pop(i) = sub;
     end
+    pop = updateFitness(net, pop, populationSize, txFun, beta);
+    pop = setAccumFitness(pop, populationSize);
+    pop = sortPopulation(pop, populationSize);
+    lastGeneration = 0;
+    fitnessArray = cell(generations,1);
+
+            totalFit = pop{populationSize}.accumFitness;
+            pop  = feval(replaceMethod, 10,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, 1, totalFit, txFun, beta, net, 1, selMixCriteria, selMixN);
+
     for g = 1: generations
+        lastGeneration = g;
         %calculo fitness + ordeno + total fitness
-        totalFit = 0;
-        for r = 1:populationSize
-            net = putWs(net, pop{r}.Ws);
-            net = calculateFitness(net,txFun,beta);
-            pop{r}.fitness = net.fitness;
-        end
-        pop = sortPopulation(pop, populationSize);
-        fit = pop{1}.fitness;
-        res = fit
-        for r = 1:populationSize
-            totalFit += pop{r}.fitness;
-            pop{r}.accumFitness = totalFit;
-        end
+        totalFit = pop{populationSize}.accumFitness;
+
         %selecciono método de reemplazo
-        pop  = feval(replaceMethod,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, g, selMixCriteria, selMixN);
+        pop  = feval(replaceMethod, epochs, pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, g, selMixCriteria, selMixN);
 
         pmut = mutAdaptation*pmut;
 
+        pop = updateFitness(net, pop, populationSize, txFun, beta);
+        pop = setAccumFitness(pop, populationSize);
+        pop = sortPopulation(pop, populationSize);
+        fit = pop{1}.fitness;
+        aux.best = fit
+        aux.avg = pop{populationSize}.fitness/populationSize
+        fitnessArray(g) = aux;
+
+        %Metodo de corte
+        if strcmp(breakMethod, 'Estructura')
+            if g > 5
+                avgDiff = 0;
+                for h = 1:5
+                    avgDiff += fitnessArray{g-h}.avg;
+                end
+                avgDiff = avgDiff/5;
+                if (avgDiff-fitnessArray{g}.avg)*fitnessArray{g}.avg<0.01
+                    corte = 'Corta por estructura'
+                    break;
+                endif
+            endif
+        elseif strcmp(breakMethod, 'Contenido')
+            if g > 5
+                avgDif = 0;
+                for h = 1:5
+                    avgDiff += fitnessArray{g-h}.best;
+                end
+                avgDiff = avgDiff/5;
+                if (avgDiff-fitnessArray{g}.best)*fitnessArray{g}.best<0.01
+                    corte = 'Corta por contenido'
+                    break;
+                endif
+            endif
+
+        elseif strcmp(breakMethod, 'Optimo')
+            if bestFitness >= getFitnessFromError(minError)
+                corte = 'Corta por estar cerca del optimo'
+                break;
+            endif   
+        endif
     end
-    for r = 1:populationSize
-        net = putWs(net, pop{r}.Ws);
-        net = calculateFitness(net,txFun,beta);
-        pop{r}.fitness = net.fitness;
-    end
-    pop = sortPopulation(pop, populationSize);
     net = putWs(net,pop{1}.Ws);
+
+    bestFitnessArray = zeros(lastGeneration, 1);
+    for i = 1:lastGeneration
+        bestFitnessArray(i) = fitnessArray{i}.best  ;
+    end
+    subplot(1,1,1);
+    plot(1:lastGeneration, bestFitnessArray, '-4; Fitness;');
 endfunction

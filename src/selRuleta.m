@@ -1,4 +1,5 @@
 function sel = selRuleta(pop, populationSize, toSelect, totalFit)
+	pop = setAccumFitness(pop, populationSize);
 	sel = cell(toSelect,1);
 	for i=1:toSelect
 		r = rand(1,1)*totalFit;

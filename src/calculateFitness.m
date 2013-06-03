@@ -8,11 +8,6 @@ function newNet = calculateFitness(net,txFun,beta)
 		error = error + getError(net.out, trainSet{i}{2});
     end
     avgError = error/size(trainSet,1);
-    if (avgError>1)
-    	avgError = sqrt(avgError);
-    else
-    	avgError = avgError*avgError;
-    endif
-    net.fitness = 1/avgError;
+    net.fitness = getFitnessFromError(avgError);
     newNet=net;
 endfunction
