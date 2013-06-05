@@ -63,8 +63,8 @@ function net = gamain()
         pop = setAccumFitness(pop, populationSize);
         pop = sortPopulation(pop, populationSize);
         fit = pop{1}.fitness;
-        aux.best = fit
-        aux.avg = pop{populationSize}.fitness/populationSize
+        aux.best = fit;
+        aux.avg = pop{populationSize}.fitness/populationSize;
         fitnessArray(g) = aux;
 
         %Metodo de corte
