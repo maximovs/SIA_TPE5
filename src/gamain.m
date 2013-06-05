@@ -80,21 +80,24 @@ function net = gamain()
                     break;
                 endif
             endif
+
+        %Si no mejoro el mejor en 5 generaciones, termina   
         elseif strcmp(breakMethod, 'Contenido')
             if g > 5
-                avgDif = 0;
+                improved = false;
                 for h = 1:5
-                    avgDiff += fitnessArray{g-h}.best;
-                end
-                avgDiff = avgDiff/5;
-                if (avgDiff-fitnessArray{g}.best)*fitnessArray{g}.best<0.01
+                    if (!improved && fitnessArray{g}.best > fitnessArray{g-h}.best)
+                        improved = true;
+                    endif
+                end 
+                if !improved
                     corte = 'Corta por contenido'
                     break;
                 endif
             endif
 
         elseif strcmp(breakMethod, 'Optimo')
-            if bestFitness >= getFitnessFromError(minError)
+            if fitnessArray{g}.best >= getFitnessFromError(minError)
                 corte = 'Corta por estar cerca del optimo'
                 break;
             endif   
