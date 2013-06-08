@@ -1,5 +1,5 @@
-function net = gamain()
-    properties = parameters();
+function net = gamain(properties)
+    % properties = parameters();
     inFileOrOp = properties.inFileOrOp;
     txFun = properties.txFun;
     lrnRate = properties.lrnRate;
