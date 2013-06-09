@@ -1,4 +1,4 @@
-function out = tester()
+function out = tester7()
 	params = parameters();
 	populationSize = cell(3,1);
 	populationSize{1} = 20;
