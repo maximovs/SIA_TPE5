@@ -1,4 +1,4 @@
-function out - tester()
+function out = tester()
 	params = parameters();
 	populationSize = cell(3,1);
 	populationSize{1} = 20;
@@ -69,29 +69,33 @@ function out - tester()
 	selMixN{1} = 4;
 	selMixN{1} = 8;
 
-
-	parameters.populationSize= 20;
-	parameters.generations= 50;
-	parameters.G= 0.8; %Porcentaje de problacion a reemplazar
-	parameters.replaceMethod= 'rep3'; % rep1 | rep2 | rep3
-	parameters.selCriteria= 'Boltzman'; %    Mix | Elite | Boltzman | Ruleta | Torneos | Universal
-	parameters.repCriteria=	'Ruleta'; % Mix | Elite | Boltzman | Ruleta | Torneos | Universal
-	parameters.crossover= 'Unif'; % 2Points | Anular | Classic | Unif
-	parameters.pcross= 0.7;
-	parameters.mutation= 'Classic2'; %Classic1 | Classic2
-	parameters.pmut=0.05;
-	parameters.mutAdaptation= 1;
-	parameters.pbackprop= 0.05;
-	parameters.selMixCriteria= 'Ruleta';
-	parameters.selMixN= 4;
+%	parameters.inFileOrOp= 'TimeSerie_G7.mat';
+%	parameters.txFun= 'exponential';
+%	parameters.lrnRate= 0.8;
+%	parameters.populationSize= 20;
+%	parameters.generations= 50;
+%	parameters.G= 0.8; %Porcentaje de problacion a reemplazar
+%	parameters.replaceMethod= 'rep3'; % rep1 | rep2 | rep3
+%	parameters.selCriteria= 'Boltzman'; %    Mix | Elite | Boltzman | Ruleta | Torneos | Universal
+%	parameters.repCriteria=	'Ruleta'; % Mix | Elite | Boltzman | Ruleta | Torneos | Universal
+%	parameters.crossover= 'Unif'; % 2Points | Anular | Classic | Unif
+%	parameters.pcross= 0.7;
+%	parameters.mutation= 'Classic2'; %Classic1 | Classic2
+%	parameters.pmut=0.05;
+%	parameters.mutAdaptation= 1;
+%	parameters.pbackprop= 0.05;
+%	parameters.selMixCriteria= 'Ruleta';
+%	parameters.selMixN= 4;
+%	parameters.minError = 0.01;
+%	parameters.breakMethod = 'Optimo';
 
 	params = parameters();
 	repComp = cell(3,1);
 	for i=1:3
 		params.replaceMethod=replaceMethod{i};
-		repComp{i} = gamain(parameters);
+		repComp{i} = gamain(params);
 	end
-	save('repComp.mat',repComp);
+	save('repComp.mat','repComp');
 	
 	params = parameters();
 	populationSizeComp = cell(3,1);
@@ -99,7 +103,7 @@ function out - tester()
 		params.populationSize=populationSize{i};
 		populationSizeComp{i} = gamain(params);
 	end
-	save('populationSizeComp.mat',populationSizeComp);
+	save('populationSizeComp.mat','populationSizeComp');
 	
 	params = parameters();
 	generationsComp = cell(3,1);
@@ -107,7 +111,7 @@ function out - tester()
 		params.generations=generations{i};
 		generationsComp{i} = gamain(params);
 	end
-	save('generationsComp.mat',generationsComp);
+	save('generationsComp.mat', 'generationsComp');
 
 	params = parameters();
 	GComp = cell(3,1);
@@ -115,16 +119,7 @@ function out - tester()
 		params.G=G{i};
 		GComp{i} = gamain(params);
 	end
-	save('GComp.mat',GComp);
-
-
-	params = parameters();
-	selCriteriaComp = cell(5,1);
-	for i=1:5
-		params.selCriteria=selCriteria{i};
-		selCriteriaComp{i} = gamain(params);
-	end
-	save('selCriteriaComp.mat',selCriteriaComp);
+	save('GComp.mat', 'GComp');
 
 	params = parameters();
 	repCriteriaComp = cell(5,1);
@@ -132,7 +127,7 @@ function out - tester()
 		params.repCriteria=repCriteria{i};
 		repCriteriaComp{i} = gamain(params);
 	end
-	save('repCriteriaComp.mat',repCriteriaComp);
+	save('repCriteriaComp.mat','repCriteriaComp');
 
 	params = parameters();
 	crossoverComp = cell(4,1);
@@ -140,7 +135,7 @@ function out - tester()
 		params.crossover=crossover{i};
 		crossoverComp{i} = gamain(params);
 	end
-	save('crossoverComp.mat',crossoverComp);
+	save('crossoverComp.mat', 'crossoverComp');
 
 
 	params = parameters();
@@ -149,7 +144,7 @@ function out - tester()
 		params.pcross=pcross{i};
 		pcrossComp{i} = gamain(params);
 	end
-	save('pcrossComp.mat',pcrossComp);
+	save('pcrossComp.mat', 'pcrossComp');
 
 	params = parameters();
 	mutationComp = cell(2,1);
@@ -157,7 +152,7 @@ function out - tester()
 		params.mutation=mutation{i};
 		mutationComp{i} = gamain(params);
 	end
-	save('mutationComp.mat',mutationComp);
+	save('mutationComp.mat', 'mutationComp');
 
 	params = parameters();
 	pmutComp = cell(2,1);
@@ -165,7 +160,7 @@ function out - tester()
 		params.pmut=pmut{i};
 		pmutComp{i} = gamain(params);
 	end
-	save('pmutComp.mat',pmutComp);
+	save('pmutComp.mat', 'pmutComp');
 
 	params = parameters();
 	mutAdaptationComp = cell(2,1);
@@ -173,7 +168,7 @@ function out - tester()
 		params.mutAdaptation=mutAdaptation{i};
 		mutAdaptationComp{i} = gamain(params);
 	end
-	save('mutAdaptationComp.mat',mutAdaptationComp);
+	save('mutAdaptationComp.mat', 'mutAdaptationComp');
 
 	params = parameters();
 	pbackpropComp = cell(2,1);
@@ -181,7 +176,7 @@ function out - tester()
 		params.pbackprop=pbackprop{i};
 		pbackpropComp{i} = gamain(params);
 	end
-	save('pbackpropComp.mat',pbackpropComp);
+	save('pbackpropComp.mat', 'pbackpropComp');
 
 	params = parameters();
 	selMixCriteriaComp = cell(2,1);
@@ -189,7 +184,7 @@ function out - tester()
 		params.selMixCriteria=selMixCriteria{i};
 		selMixCriteriaComp{i} = gamain(params);
 	end
-	save('selMixCriteriaComp.mat',selMixCriteriaComp);
+	save('selMixCriteriaComp.mat', 'selMixCriteriaComp');
 
 	params = parameters();
 	selMixNComp = cell(2,1);
@@ -197,6 +192,14 @@ function out - tester()
 		params.selMixN=selMixN{i};
 		selMixNComp{i} = gamain(params);
 	end
-	save('selMixNComp.mat',selMixNComp);
+	save('selMixNComp.mat','selMixNComp');
+
+	params = parameters();
+	selCriteriaComp = cell(5,1);
+	for i=1:5
+		params.selCriteria=selCriteria{i};
+		selCriteriaComp{i} = gamain(params);
+	end
+	save('selCriteriaComp.mat', 'selCriteriaComp');
 
 endfunction
