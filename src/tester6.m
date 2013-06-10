@@ -91,19 +91,22 @@ function out = tester6()
 
 	params = parameters();
 	pbackpropComp = cell(2,1);
-	for i=1:2
-		params.pbackprop=pbackprop{i};
-		pbackpropComp{i} = gamain(params);
+	for j=1:5
+		for i=1:2
+			params.pbackprop=pbackprop{i};
+			pbackpropComp{i} = gamain(params);
+		end
+		save(strcat('pbackpropComp',int2str(j),'.mat'), 'pbackpropComp');
 	end
-	save('pbackpropComp.mat', 'pbackpropComp');
 
 	params = parameters();
 	selMixCriteriaComp = cell(2,1);
-	for i=1:2
-		params.selMixCriteria=selMixCriteria{i};
-		selMixCriteriaComp{i} = gamain(params);
+	for j=1:5	
+		for i=1:2
+			params.selMixCriteria=selMixCriteria{i};
+			selMixCriteriaComp{i} = gamain(params);
+		end
+		save(strcat('selMixCriteriaComp',int2str(j),'.mat'), 'selMixCriteriaComp');
 	end
-	save('selMixCriteriaComp.mat', 'selMixCriteriaComp');
-
 
 endfunction

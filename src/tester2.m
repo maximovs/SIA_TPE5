@@ -91,18 +91,20 @@ function out = tester2()
 	
 	params = parameters();
 	generationsComp = cell(3,1);
-	for i=1:3
-		params.generations=generations{i};
-		generationsComp{i} = gamain(params);
+	for j=1:5
+		for i=1:3
+			params.generations=generations{i};
+			generationsComp{i} = gamain(params);
+		end
+		save(strcat('generationsComp',int2str(j),'.mat'), 'generationsComp');
 	end
-	save('generationsComp.mat', 'generationsComp');
-
 	params = parameters();
 	GComp = cell(3,1);
-	for i=1:3
-		params.G=G{i};
-		GComp{i} = gamain(params);
+	for j=1:5	
+		for i=1:3
+			params.G=G{i};
+			GComp{i} = gamain(params);
+		end
+		save(strcat('GComp',int2str(j),'.mat'), 'GComp');
 	end
-	save('GComp.mat', 'GComp');
-
 endfunction

@@ -46,8 +46,8 @@ function net = gamain(properties)
     lastGeneration = 0;
     fitnessArray = cell(generations,1);
 
-            totalFit = pop{populationSize}.accumFitness;
-            pop  = feval(replaceMethod, 10,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, 1, totalFit, txFun, beta, net, 1, selMixCriteria, selMixN);
+    %        totalFit = pop{populationSize}.accumFitness;
+    %        pop  = feval(replaceMethod, 10,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, 1, totalFit, txFun, beta, net, 1, selMixCriteria, selMixN);
 
     for g = 1: generations
         lastGeneration = g;

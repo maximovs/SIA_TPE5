@@ -1,9 +1,10 @@
-function out = tester4()
+function out = tester6()
 	params = parameters();
-	populationSize = cell(3,1);
+	populationSize = cell(4,1);
 	populationSize{1} = 20;
 	populationSize{2} = 30;
 	populationSize{3} = 100;
+	populationSize{4} = 150;
 
 	generations = cell(3,1);
 	generations{1} = 20;
@@ -89,25 +90,18 @@ function out = tester4()
 %	parameters.minError = 0.01;
 %	parameters.breakMethod = 'Optimo';
 
-
 	params = parameters();
-	pcrossComp = cell(3,1);
-	for j=1:5
-		for i=1:3
-			params.pcross=pcross{i};
-			pcrossComp{i} = gamain(params);
+	params.pbackprop = 0;
+	noBackPropComp = cell(4,3);
+	for j=1:3
+		for p=1:4
+			params.populationSize = populationSize{p};
+			for i=1:3
+				params.generations = generations{i};
+				noBackPropComp{p,i} = gamain(params);
+			end
 		end
-		save(strcat('pcrossComp',int2str(j),'.mat'), 'pcrossComp');
-	end
-
-	params = parameters();
-	mutationComp = cell(2,1);
-	for j=1:5
-		for i=1:2
-			params.mutation=mutation{i};
-			mutationComp{i} = gamain(params);
-		end
-		save(strcat('mutationComp',int2str(j),'.mat'), 'mutationComp');
+		save(strcat('noBackPropComp',int2str(j),'.mat'), 'noBackPropComp');
 	end
 
 endfunction
