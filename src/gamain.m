@@ -46,8 +46,6 @@ function net = gamain(properties)
     lastGeneration = 0;
     fitnessArray = cell(generations,1);
 
-    %        totalFit = pop{populationSize}.accumFitness;
-    %        pop  = feval(replaceMethod, 10,pop,populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, 1, totalFit, txFun, beta, net, 1, selMixCriteria, selMixN);
 
     for g = 1: generations
         lastGeneration = g;
@@ -70,18 +68,19 @@ function net = gamain(properties)
         %Metodo de corte
         if strcmp(breakMethod, 'Estructura')
             if g > 5
-                avgDiff = 0;
+                improved = false;
                 for h = 1:5
-                    avgDiff += fitnessArray{g-h}.avg;
-                end
-                avgDiff = avgDiff/5;
-                if (avgDiff-fitnessArray{g}.avg)*fitnessArray{g}.avg<0.01
+                    if (!improved && fitnessArray{g}.avg > fitnessArray{g-h}.avg*1.05)
+                        improved = true;
+                    endif
+                end 
+                if !improved
                     corte = 'Corta por estructura'
                     break;
                 endif
             endif
 
-        %Si no mejoro el mejor en 5 generaciones, termina   
+        %Si no mejoró el mejor en 5 generaciones, termina   
         elseif strcmp(breakMethod, 'Contenido')
             if g > 5
                 improved = false;
