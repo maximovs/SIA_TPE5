@@ -1,0 +1,4236 @@
+# Created by Octave 3.2.4, Mon Jun 10 11:07:51 2013 ART <marganar@lab98>
+# name: mutationComp
+# type: cell
+# rows: 2
+# columns: 1
+# name: <cell-element>
+# type: struct
+# length: 21
+# name: h
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+2
+
+# name: n
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+2
+
+# name: m
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+9
+
+# name: size
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+127
+
+# name: weights
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: cell
+# rows: 3
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 3
+# columns: 9
+ 2.155881414476727 5.372909601345929 6.690090284618827 6.420443379202114 -6.355700539656932 9.887954918921476 -2.75324581614036 -2.00657636949328 -4.774803525400896
+ -23.95300982393358 12.72111928399782 5.092958084747158 -7.135438968136421 -14.5108909353877 -10.58109224864475 12.66624123785686 0.8689602018984149 -0.1548315442360478
+ 22.69486646772179 0.4207852567964206 -3.323387327442056 4.565303446268246 11.98763311035025 7.510733677131159 7.446087190607944 7.693552022500758 -7.332116882530769
+# name: <cell-element>
+# type: matrix
+# rows: 10
+# columns: 9
+ -2.76152631571518 -4.965103461007016 -0.1865123636217706 2.807077273671656 0.2178205799398136 -3.318691641567746 2.598790551512453 3.198296640151979 -5.565775024971155
+ 2.144701078025884 -0.6006429277724257 0.7094747770330901 -1.956754373855684 5.441393496303906 -0.3447479643946164 1.838660834991991 -5.263058253743684 3.419371361709541
+ -1.20325624426285 -0.9538067645728614 -2.841554296284417 0.950427064565938 1.36287025606266 3.438951072140227 -2.887667798617568 1.23186476062263 -1.346862548298428
+ -3.892254603661128 -1.982742841960975 2.593889611156917 -1.124698386972285 -2.102729796115589 1.056997369949468 -6.083475517343611 3.441964002432494 6.475420700334605
+ -0.5109265324930989 0.762383591406449 -1.844290580227889 3.539940421375544 -8.841738158984391 4.212600376336178 0.7699995341555376 3.065875293875877 3.900796304600715
+ -2.788172283596309 -2.990825237836344 1.051841798773036 1.163639862936087 -1.623177102530345 -0.1616076733774665 -3.635074696529939 1.469881551325073 -4.539364695467329
+ 6.218825523528599 1.36750819548691 -3.390416266711151 2.206970458670165 1.397944339076959 -2.46393986142119 -3.066028644541297 4.186134612670759 -5.404913735863548
+ 0.5957717078566063 -1.362926669493333 0.7978930329230054 -1.308925586935873 1.153852292908844 -4.366233712529429 -1.372625067052947 3.983794996663133 -0.3303302731165098
+ -0.5928826356696637 1.776516347464339 -0.8011689020817749 2.099106700765594 -5.168620053439813 -0.4169227713436545 3.687901626371182 -5.484681514173067 0.9954120828885149
+ 1.915675716996714 -4.208501293290179 2.660164623386117 -0.7638622575662571 -0.4056616628570299 -2.78143208806764 -1.251835558969608 -2.077988578771201 -1.561835195020612
+# name: <cell-element>
+# type: matrix
+# rows: 10
+# columns: 1
+ -2.849695703957434
+ -0.7417695386647981
+ -0.6868063438980994
+ -0.4426438120667891
+ 1.099419136699073
+ -0.1308737044467143
+ -0.6349925108121072
+ -1.025801019898056
+ 0.9827541688190572
+ -1.821614098839836
+
+
+# name: lastDWs
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: cell
+# rows: 3
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 3
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+# name: <cell-element>
+# type: matrix
+# rows: 10
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+# name: <cell-element>
+# type: matrix
+# rows: 10
+# columns: 1
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+
+
+# name: out
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+1
+
+# name: neurons
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: cell
+# rows: 3
+# columns: 1
+# name: <cell-element>
+# type: struct
+# length: 2
+# name: deltas
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+
+# name: values
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+
+# name: <cell-element>
+# type: struct
+# length: 2
+# name: deltas
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+
+# name: values
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+
+# name: <cell-element>
+# type: struct
+# length: 2
+# name: deltas
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0
+
+# name: values
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0
+
+
+
+# name: count
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0
+
+# name: prevErr
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+9999999999
+
+# name: lrnRate
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0.8
+
+# name: lrnStrategy
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+3
+
+# name: lrn_A
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0.01
+
+# name: lrn_B
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0.7
+
+# name: lrn_K
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+4
+
+# name: alpha
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0.5
+
+# name: momentum
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0
+
+# name: amp
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+4
+
+# name: min
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+-3.799963607729421
+
+# name: max
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+3.79999261289041
+
+# name: trainSet
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: cell
+# rows: 100
+# columns: 2
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.005 0.003925
+
+# name: <cell-element>
+# type: scalar
+0.8015971732674207
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.003925 0.8015971732674207
+
+# name: <cell-element>
+# type: scalar
+-0.7732439413804819
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8015971732674207 -0.7732439413804819
+
+# name: <cell-element>
+# type: scalar
+0.8075969996109261
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.7732439413804819 0.8075969996109261
+
+# name: <cell-element>
+# type: scalar
+0.7781347463875804
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8075969996109261 0.7781347463875804
+
+# name: <cell-element>
+# type: scalar
+0.8542031526422144
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7781347463875804 0.8542031526422144
+
+# name: <cell-element>
+# type: scalar
+0.6088960072584573
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8542031526422144 0.6088960072584573
+
+# name: <cell-element>
+# type: scalar
+0.8711010145525971
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6088960072584573 0.8711010145525971
+
+# name: <cell-element>
+# type: scalar
+-0.04636060665405125
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8711010145525971 -0.04636060665405125
+
+# name: <cell-element>
+# type: scalar
+-0.9491404442856916
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.04636060665405125 -0.9491404442856916
+
+# name: <cell-element>
+# type: scalar
+-0.9451327812785209
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9491404442856916 -0.9451327812785209
+
+# name: <cell-element>
+# type: scalar
+0.7910667465437735
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9451327812785209 0.7910667465437735
+
+# name: <cell-element>
+# type: scalar
+0.3153678714544298
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7910667465437735 0.3153678714544298
+
+# name: <cell-element>
+# type: scalar
+0.224707379806404
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3153678714544298 0.224707379806404
+
+# name: <cell-element>
+# type: scalar
+0.9294932910870368
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.224707379806404 0.9294932910870368
+
+# name: <cell-element>
+# type: scalar
+-0.9208539793766602
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9294932910870368 -0.9208539793766602
+
+# name: <cell-element>
+# type: scalar
+0.8111829119096509
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9208539793766602 0.8111829119096509
+
+# name: <cell-element>
+# type: scalar
+0.3302444659904835
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8111829119096509 0.3302444659904835
+
+# name: <cell-element>
+# type: scalar
+0.2053140700761989
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3302444659904835 0.2053140700761989
+
+# name: <cell-element>
+# type: scalar
+0.9476014908730466
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.2053140700761989 0.9476014908730466
+
+# name: <cell-element>
+# type: scalar
+-0.8756159293268713
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9476014908730466 -0.8756159293268713
+
+# name: <cell-element>
+# type: scalar
+0.8599634921009974
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8756159293268713 0.8599634921009974
+
+# name: <cell-element>
+# type: scalar
+0.3175896746708283
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8599634921009974 0.3175896746708283
+
+# name: <cell-element>
+# type: scalar
+-0.02650404586466597
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3175896746708283 -0.02650404586466597
+
+# name: <cell-element>
+# type: scalar
+0.6580593746899408
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.02650404586466597 0.6580593746899408
+
+# name: <cell-element>
+# type: scalar
+-0.9367111635515299
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6580593746899408 -0.9367111635515299
+
+# name: <cell-element>
+# type: scalar
+0.844871753913303
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9367111635515299 0.844871753913303
+
+# name: <cell-element>
+# type: scalar
+0.1484006856626301
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.844871753913303 0.1484006856626301
+
+# name: <cell-element>
+# type: scalar
+-0.5706006099098369
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1484006856626301 -0.5706006099098369
+
+# name: <cell-element>
+# type: scalar
+-0.6366436738851524
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5706006099098369 -0.6366436738851524
+
+# name: <cell-element>
+# type: scalar
+0.9056900975685996
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.6366436738851524 0.9056900975685996
+
+# name: <cell-element>
+# type: scalar
+0.8525338833338066
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9056900975685996 0.8525338833338066
+
+# name: <cell-element>
+# type: scalar
+0.889712432639077
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8525338833338066 0.889712432639077
+
+# name: <cell-element>
+# type: scalar
+0.7145219724264382
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.889712432639077 0.7145219724264382
+
+# name: <cell-element>
+# type: scalar
+0.9419880454969422
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7145219724264382 0.9419880454969422
+
+# name: <cell-element>
+# type: scalar
+0.08551302150045624
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9419880454969422 0.08551302150045624
+
+# name: <cell-element>
+# type: scalar
+-0.911279879282032
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.08551302150045624 -0.911279879282032
+
+# name: <cell-element>
+# type: scalar
+-0.9143599928659448
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.911279879282032 -0.9143599928659448
+
+# name: <cell-element>
+# type: scalar
+0.8056605360347097
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9143599928659448 0.8056605360347097
+
+# name: <cell-element>
+# type: scalar
+0.3726609568597166
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8056605360347097 0.3726609568597166
+
+# name: <cell-element>
+# type: scalar
+0.378325390455591
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3726609568597166 0.378325390455591
+
+# name: <cell-element>
+# type: scalar
+0.7875633200743588
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.378325390455591 0.7875633200743588
+
+# name: <cell-element>
+# type: scalar
+-0.5650102740502567
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7875633200743588 -0.5650102740502567
+
+# name: <cell-element>
+# type: scalar
+0.1204287147945064
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5650102740502567 0.1204287147945064
+
+# name: <cell-element>
+# type: scalar
+-0.9361508628647897
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1204287147945064 -0.9361508628647897
+
+# name: <cell-element>
+# type: scalar
+-0.827278587260031
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9361508628647897 -0.827278587260031
+
+# name: <cell-element>
+# type: scalar
+0.5082525285757629
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.827278587260031 0.5082525285757629
+
+# name: <cell-element>
+# type: scalar
+0.8856200765685015
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.5082525285757629 0.8856200765685015
+
+# name: <cell-element>
+# type: scalar
+-0.4633290517751383
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8856200765685015 -0.4633290517751383
+
+# name: <cell-element>
+# type: scalar
+0.1067546805547828
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.4633290517751383 0.1067546805547828
+
+# name: <cell-element>
+# type: scalar
+-0.9102062440893741
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1067546805547828 -0.9102062440893741
+
+# name: <cell-element>
+# type: scalar
+-0.8906139194132189
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9102062440893741 -0.8906139194132189
+
+# name: <cell-element>
+# type: scalar
+0.7567590498120198
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8906139194132189 0.7567590498120198
+
+# name: <cell-element>
+# type: scalar
+0.6074123086219442
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7567590498120198 0.6074123086219442
+
+# name: <cell-element>
+# type: scalar
+0.9496641653256765
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6074123086219442 0.9496641653256765
+
+# name: <cell-element>
+# type: scalar
+-0.3426553583188368
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9496641653256765 -0.3426553583188368
+
+# name: <cell-element>
+# type: scalar
+-0.1079779982537151
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.3426553583188368 -0.1079779982537151
+
+# name: <cell-element>
+# type: scalar
+0.05818958393357616
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.1079779982537151 0.05818958393357616
+
+# name: <cell-element>
+# type: scalar
+0.3126264720839843
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.05818958393357616 0.3126264720839843
+
+# name: <cell-element>
+# type: scalar
+-0.01685928989480304
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3126264720839843 -0.01685928989480304
+
+# name: <cell-element>
+# type: scalar
+0.6969492536365328
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.01685928989480304 0.6969492536365328
+
+# name: <cell-element>
+# type: scalar
+-0.9118285767055104
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6969492536365328 -0.9118285767055104
+
+# name: <cell-element>
+# type: scalar
+0.8678715494477879
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9118285767055104 0.8678715494477879
+
+# name: <cell-element>
+# type: scalar
+0.1554631850106741
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8678715494477879 0.1554631850106741
+
+# name: <cell-element>
+# type: scalar
+-0.6178294044474688
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1554631850106741 -0.6178294044474688
+
+# name: <cell-element>
+# type: scalar
+-0.7736156051336712
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.6178294044474688 -0.7736156051336712
+
+# name: <cell-element>
+# type: scalar
+0.9486986248336311
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.7736156051336712 0.9486986248336311
+
+# name: <cell-element>
+# type: scalar
+0.3646279295578187
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9486986248336311 0.3646279295578187
+
+# name: <cell-element>
+# type: scalar
+-0.1837893996844974
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3646279295578187 -0.1837893996844974
+
+# name: <cell-element>
+# type: scalar
+-0.04945047169748585
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.1837893996844974 -0.04945047169748585
+
+# name: <cell-element>
+# type: scalar
+0.42400017436724
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.04945047169748585 0.42400017436724
+
+# name: <cell-element>
+# type: scalar
+-0.7404865401417433
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.42400017436724 -0.7404865401417433
+
+# name: <cell-element>
+# type: scalar
+-0.5560260982779677
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.7404865401417433 -0.5560260982779677
+
+# name: <cell-element>
+# type: scalar
+0.2462073635466908
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5560260982779677 0.2462073635466908
+
+# name: <cell-element>
+# type: scalar
+-0.7630462988226085
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.2462073635466908 -0.7630462988226085
+
+# name: <cell-element>
+# type: scalar
+-0.9003816778072022
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.7630462988226085 -0.9003816778072022
+
+# name: <cell-element>
+# type: scalar
+0.9497813616552355
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9003816778072022 0.9497813616552355
+
+# name: <cell-element>
+# type: scalar
+-0.1113370486927985
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9497813616552355 -0.1113370486927985
+
+# name: <cell-element>
+# type: scalar
+-0.8186637642941349
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.1113370486927985 -0.8186637642941349
+
+# name: <cell-element>
+# type: scalar
+-0.6030339828371897
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8186637642941349 -0.6030339828371897
+
+# name: <cell-element>
+# type: scalar
+0.130195786030619
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.6030339828371897 0.130195786030619
+
+# name: <cell-element>
+# type: scalar
+-0.8883895796747316
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.130195786030619 -0.8883895796747316
+
+# name: <cell-element>
+# type: scalar
+-0.8884468694072228
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8883895796747316 -0.8884468694072228
+
+# name: <cell-element>
+# type: scalar
+0.7995150389201242
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8884468694072228 0.7995150389201242
+
+# name: <cell-element>
+# type: scalar
+0.4813526908884894
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7995150389201242 0.4813526908884894
+
+# name: <cell-element>
+# type: scalar
+0.7254647424622837
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.4813526908884894 0.7254647424622837
+
+# name: <cell-element>
+# type: scalar
+0.02237213563031335
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7254647424622837 0.02237213563031335
+
+# name: <cell-element>
+# type: scalar
+-0.5905156633022758
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.02237213563031335 -0.5905156633022758
+
+# name: <cell-element>
+# type: scalar
+-0.2897681967465164
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5905156633022758 -0.2897681967465164
+
+# name: <cell-element>
+# type: scalar
+-0.1915187710847548
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.2897681967465164 -0.1915187710847548
+
+# name: <cell-element>
+# type: scalar
+0.5418874373531299
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.1915187710847548 0.5418874373531299
+
+# name: <cell-element>
+# type: scalar
+-0.8881518375364174
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.5418874373531299 -0.8881518375364174
+
+# name: <cell-element>
+# type: scalar
+0.4020378534099258
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8881518375364174 0.4020378534099258
+
+# name: <cell-element>
+# type: scalar
+0.8090877313929573
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.4020378534099258 0.8090877313929573
+
+# name: <cell-element>
+# type: scalar
+-0.5583045119137251
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8090877313929573 -0.5583045119137251
+
+# name: <cell-element>
+# type: scalar
+0.1760410918986144
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5583045119137251 0.1760410918986144
+
+# name: <cell-element>
+# type: scalar
+-0.8868786116073178
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1760410918986144 -0.8868786116073178
+
+# name: <cell-element>
+# type: scalar
+-0.8151699077759502
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8868786116073178 -0.8151699077759502
+
+# name: <cell-element>
+# type: scalar
+0.6215193143781598
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8151699077759502 0.6215193143781598
+
+# name: <cell-element>
+# type: scalar
+0.9494390074912247
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6215193143781598 0.9494390074912247
+
+# name: <cell-element>
+# type: scalar
+-0.2913241093259547
+
+
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+
+
+# name: <cell-element>
+# type: struct
+# length: 21
+# name: h
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+2
+
+# name: n
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+2
+
+# name: m
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+9
+
+# name: size
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+127
+
+# name: weights
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: cell
+# rows: 3
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 3
+# columns: 9
+ 1.412095686185547 -13.22051056342157 4.124240010377776 -4.716685639613167 -3.549464395518247 -6.641412521281921 11.14681703756461 7.211458692096996 -6.302852601753881
+ -13.38416327138192 11.13995920231353 2.659912143193847 12.37440410197429 -11.06479873325988 -2.77621739095339 7.650149377963754 14.86426514125527 -1.806719000221156
+ 13.83324105040043 -15.36998802531226 8.781526357112368 -12.41170176400561 -0.9535006539564911 -0.7297253724923201 -8.568287367765338 -12.43679455340789 3.150737472115289
+# name: <cell-element>
+# type: matrix
+# rows: 10
+# columns: 9
+ 1.929543470428406 3.028913723890388 4.279255002895903 2.345854862005555 2.070854041832847 -2.943109664020582 1.277052650077003 2.455799197451396 3.313133199258515
+ 0.89004778213296 -1.879820356503897 -2.046808052812793 -1.474771019497186 1.252464214365169 -3.27386818172185 -2.648714534917993 0.8706504520653134 -1.769666294454675
+ -7.37915150058816 3.482908291273793 -2.215504856899781 1.814659519608298 -1.491594886115434 -5.738073493603327 -1.381979292772835 1.562714722595802 2.435796282038828
+ -3.826790578991417 -3.227800358453228 -0.6760350371412672 2.328655013938391 0.08168533295411028 -0.8530594159729276 0.1262523501763585 2.982612972535204 -1.764025475942231
+ -5.704158320479445 -0.3670790626445767 4.413753809501754 -0.4807378039360483 1.697273322054175 -3.085514796437195 -4.976114563780726 0.9206985859955118 4.713793117412921
+ -0.9011318716635972 -1.406625272689608 -2.558781001136821 1.947020747103781 6.745970324329978 -3.520750186484406 3.759710761070163 0.3474978938234494 2.374358489920185
+ 4.096988856601998 -3.438939792590038 0.1324872299755317 0.8631820954930155 -1.570817176435928 0.7526028732614095 1.865342960951541 2.488686129268115 -4.796442931891731
+ -2.614931044413968 2.480103661350985 -0.8392281461323754 -4.472666882849587 1.627975239682836 2.572252320396569 0.9166175009836257 -0.2407126953941697 -2.963217281623419
+ 5.991264836814103 -0.54237521848098 -2.28663255999503 0.8905147643660078 1.513177904995277 -5.906370314640081 -0.07457021712683801 0.442877589168152 -3.257372791660844
+ 5.212406600930609 -2.976259739226444 1.611606865471762 -0.5948750389791171 -0.5468504828981021 -3.723240515937828 1.768086750582777 0.7272109244348387 -0.7007714237359954
+# name: <cell-element>
+# type: matrix
+# rows: 10
+# columns: 1
+ -3.181856167172467
+ -1.344808256305458
+ 1.199251488266882
+ 0.9720936866691877
+ -0.8981089739226829
+ -0.3585273768938571
+ 2.276180801690513
+ 0.3418758320398477
+ -0.211619216814516
+ 0.6650843594061366
+
+
+# name: lastDWs
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: cell
+# rows: 3
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 3
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+# name: <cell-element>
+# type: matrix
+# rows: 10
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+# name: <cell-element>
+# type: matrix
+# rows: 10
+# columns: 1
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+
+
+# name: out
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+1
+
+# name: neurons
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: cell
+# rows: 3
+# columns: 1
+# name: <cell-element>
+# type: struct
+# length: 2
+# name: deltas
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+
+# name: values
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+
+# name: <cell-element>
+# type: struct
+# length: 2
+# name: deltas
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+
+# name: values
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 9
+ 0 0 0 0 0 0 0 0 0
+
+# name: <cell-element>
+# type: struct
+# length: 2
+# name: deltas
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0
+
+# name: values
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0
+
+
+
+# name: count
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0
+
+# name: prevErr
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+9999999999
+
+# name: lrnRate
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0.8
+
+# name: lrnStrategy
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+3
+
+# name: lrn_A
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0.01
+
+# name: lrn_B
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0.7
+
+# name: lrn_K
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+4
+
+# name: alpha
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0.5
+
+# name: momentum
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+0
+
+# name: amp
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+4
+
+# name: min
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+-3.799963607729421
+
+# name: max
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: scalar
+3.79999261289041
+
+# name: trainSet
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: cell
+# rows: 100
+# columns: 2
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.005 0.003925
+
+# name: <cell-element>
+# type: scalar
+0.8015971732674207
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.003925 0.8015971732674207
+
+# name: <cell-element>
+# type: scalar
+-0.7732439413804819
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8015971732674207 -0.7732439413804819
+
+# name: <cell-element>
+# type: scalar
+0.8075969996109261
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.7732439413804819 0.8075969996109261
+
+# name: <cell-element>
+# type: scalar
+0.7781347463875804
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8075969996109261 0.7781347463875804
+
+# name: <cell-element>
+# type: scalar
+0.8542031526422144
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7781347463875804 0.8542031526422144
+
+# name: <cell-element>
+# type: scalar
+0.6088960072584573
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8542031526422144 0.6088960072584573
+
+# name: <cell-element>
+# type: scalar
+0.8711010145525971
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6088960072584573 0.8711010145525971
+
+# name: <cell-element>
+# type: scalar
+-0.04636060665405125
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8711010145525971 -0.04636060665405125
+
+# name: <cell-element>
+# type: scalar
+-0.9491404442856916
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.04636060665405125 -0.9491404442856916
+
+# name: <cell-element>
+# type: scalar
+-0.9451327812785209
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9491404442856916 -0.9451327812785209
+
+# name: <cell-element>
+# type: scalar
+0.7910667465437735
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9451327812785209 0.7910667465437735
+
+# name: <cell-element>
+# type: scalar
+0.3153678714544298
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7910667465437735 0.3153678714544298
+
+# name: <cell-element>
+# type: scalar
+0.224707379806404
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3153678714544298 0.224707379806404
+
+# name: <cell-element>
+# type: scalar
+0.9294932910870368
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.224707379806404 0.9294932910870368
+
+# name: <cell-element>
+# type: scalar
+-0.9208539793766602
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9294932910870368 -0.9208539793766602
+
+# name: <cell-element>
+# type: scalar
+0.8111829119096509
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9208539793766602 0.8111829119096509
+
+# name: <cell-element>
+# type: scalar
+0.3302444659904835
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8111829119096509 0.3302444659904835
+
+# name: <cell-element>
+# type: scalar
+0.2053140700761989
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3302444659904835 0.2053140700761989
+
+# name: <cell-element>
+# type: scalar
+0.9476014908730466
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.2053140700761989 0.9476014908730466
+
+# name: <cell-element>
+# type: scalar
+-0.8756159293268713
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9476014908730466 -0.8756159293268713
+
+# name: <cell-element>
+# type: scalar
+0.8599634921009974
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8756159293268713 0.8599634921009974
+
+# name: <cell-element>
+# type: scalar
+0.3175896746708283
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8599634921009974 0.3175896746708283
+
+# name: <cell-element>
+# type: scalar
+-0.02650404586466597
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3175896746708283 -0.02650404586466597
+
+# name: <cell-element>
+# type: scalar
+0.6580593746899408
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.02650404586466597 0.6580593746899408
+
+# name: <cell-element>
+# type: scalar
+-0.9367111635515299
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6580593746899408 -0.9367111635515299
+
+# name: <cell-element>
+# type: scalar
+0.844871753913303
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9367111635515299 0.844871753913303
+
+# name: <cell-element>
+# type: scalar
+0.1484006856626301
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.844871753913303 0.1484006856626301
+
+# name: <cell-element>
+# type: scalar
+-0.5706006099098369
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1484006856626301 -0.5706006099098369
+
+# name: <cell-element>
+# type: scalar
+-0.6366436738851524
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5706006099098369 -0.6366436738851524
+
+# name: <cell-element>
+# type: scalar
+0.9056900975685996
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.6366436738851524 0.9056900975685996
+
+# name: <cell-element>
+# type: scalar
+0.8525338833338066
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9056900975685996 0.8525338833338066
+
+# name: <cell-element>
+# type: scalar
+0.889712432639077
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8525338833338066 0.889712432639077
+
+# name: <cell-element>
+# type: scalar
+0.7145219724264382
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.889712432639077 0.7145219724264382
+
+# name: <cell-element>
+# type: scalar
+0.9419880454969422
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7145219724264382 0.9419880454969422
+
+# name: <cell-element>
+# type: scalar
+0.08551302150045624
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9419880454969422 0.08551302150045624
+
+# name: <cell-element>
+# type: scalar
+-0.911279879282032
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.08551302150045624 -0.911279879282032
+
+# name: <cell-element>
+# type: scalar
+-0.9143599928659448
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.911279879282032 -0.9143599928659448
+
+# name: <cell-element>
+# type: scalar
+0.8056605360347097
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9143599928659448 0.8056605360347097
+
+# name: <cell-element>
+# type: scalar
+0.3726609568597166
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8056605360347097 0.3726609568597166
+
+# name: <cell-element>
+# type: scalar
+0.378325390455591
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3726609568597166 0.378325390455591
+
+# name: <cell-element>
+# type: scalar
+0.7875633200743588
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.378325390455591 0.7875633200743588
+
+# name: <cell-element>
+# type: scalar
+-0.5650102740502567
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7875633200743588 -0.5650102740502567
+
+# name: <cell-element>
+# type: scalar
+0.1204287147945064
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5650102740502567 0.1204287147945064
+
+# name: <cell-element>
+# type: scalar
+-0.9361508628647897
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1204287147945064 -0.9361508628647897
+
+# name: <cell-element>
+# type: scalar
+-0.827278587260031
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9361508628647897 -0.827278587260031
+
+# name: <cell-element>
+# type: scalar
+0.5082525285757629
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.827278587260031 0.5082525285757629
+
+# name: <cell-element>
+# type: scalar
+0.8856200765685015
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.5082525285757629 0.8856200765685015
+
+# name: <cell-element>
+# type: scalar
+-0.4633290517751383
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8856200765685015 -0.4633290517751383
+
+# name: <cell-element>
+# type: scalar
+0.1067546805547828
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.4633290517751383 0.1067546805547828
+
+# name: <cell-element>
+# type: scalar
+-0.9102062440893741
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1067546805547828 -0.9102062440893741
+
+# name: <cell-element>
+# type: scalar
+-0.8906139194132189
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9102062440893741 -0.8906139194132189
+
+# name: <cell-element>
+# type: scalar
+0.7567590498120198
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8906139194132189 0.7567590498120198
+
+# name: <cell-element>
+# type: scalar
+0.6074123086219442
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7567590498120198 0.6074123086219442
+
+# name: <cell-element>
+# type: scalar
+0.9496641653256765
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6074123086219442 0.9496641653256765
+
+# name: <cell-element>
+# type: scalar
+-0.3426553583188368
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9496641653256765 -0.3426553583188368
+
+# name: <cell-element>
+# type: scalar
+-0.1079779982537151
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.3426553583188368 -0.1079779982537151
+
+# name: <cell-element>
+# type: scalar
+0.05818958393357616
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.1079779982537151 0.05818958393357616
+
+# name: <cell-element>
+# type: scalar
+0.3126264720839843
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.05818958393357616 0.3126264720839843
+
+# name: <cell-element>
+# type: scalar
+-0.01685928989480304
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3126264720839843 -0.01685928989480304
+
+# name: <cell-element>
+# type: scalar
+0.6969492536365328
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.01685928989480304 0.6969492536365328
+
+# name: <cell-element>
+# type: scalar
+-0.9118285767055104
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6969492536365328 -0.9118285767055104
+
+# name: <cell-element>
+# type: scalar
+0.8678715494477879
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9118285767055104 0.8678715494477879
+
+# name: <cell-element>
+# type: scalar
+0.1554631850106741
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8678715494477879 0.1554631850106741
+
+# name: <cell-element>
+# type: scalar
+-0.6178294044474688
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1554631850106741 -0.6178294044474688
+
+# name: <cell-element>
+# type: scalar
+-0.7736156051336712
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.6178294044474688 -0.7736156051336712
+
+# name: <cell-element>
+# type: scalar
+0.9486986248336311
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.7736156051336712 0.9486986248336311
+
+# name: <cell-element>
+# type: scalar
+0.3646279295578187
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9486986248336311 0.3646279295578187
+
+# name: <cell-element>
+# type: scalar
+-0.1837893996844974
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.3646279295578187 -0.1837893996844974
+
+# name: <cell-element>
+# type: scalar
+-0.04945047169748585
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.1837893996844974 -0.04945047169748585
+
+# name: <cell-element>
+# type: scalar
+0.42400017436724
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.04945047169748585 0.42400017436724
+
+# name: <cell-element>
+# type: scalar
+-0.7404865401417433
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.42400017436724 -0.7404865401417433
+
+# name: <cell-element>
+# type: scalar
+-0.5560260982779677
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.7404865401417433 -0.5560260982779677
+
+# name: <cell-element>
+# type: scalar
+0.2462073635466908
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5560260982779677 0.2462073635466908
+
+# name: <cell-element>
+# type: scalar
+-0.7630462988226085
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.2462073635466908 -0.7630462988226085
+
+# name: <cell-element>
+# type: scalar
+-0.9003816778072022
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.7630462988226085 -0.9003816778072022
+
+# name: <cell-element>
+# type: scalar
+0.9497813616552355
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.9003816778072022 0.9497813616552355
+
+# name: <cell-element>
+# type: scalar
+-0.1113370486927985
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.9497813616552355 -0.1113370486927985
+
+# name: <cell-element>
+# type: scalar
+-0.8186637642941349
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.1113370486927985 -0.8186637642941349
+
+# name: <cell-element>
+# type: scalar
+-0.6030339828371897
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8186637642941349 -0.6030339828371897
+
+# name: <cell-element>
+# type: scalar
+0.130195786030619
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.6030339828371897 0.130195786030619
+
+# name: <cell-element>
+# type: scalar
+-0.8883895796747316
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.130195786030619 -0.8883895796747316
+
+# name: <cell-element>
+# type: scalar
+-0.8884468694072228
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8883895796747316 -0.8884468694072228
+
+# name: <cell-element>
+# type: scalar
+0.7995150389201242
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8884468694072228 0.7995150389201242
+
+# name: <cell-element>
+# type: scalar
+0.4813526908884894
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7995150389201242 0.4813526908884894
+
+# name: <cell-element>
+# type: scalar
+0.7254647424622837
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.4813526908884894 0.7254647424622837
+
+# name: <cell-element>
+# type: scalar
+0.02237213563031335
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.7254647424622837 0.02237213563031335
+
+# name: <cell-element>
+# type: scalar
+-0.5905156633022758
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.02237213563031335 -0.5905156633022758
+
+# name: <cell-element>
+# type: scalar
+-0.2897681967465164
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5905156633022758 -0.2897681967465164
+
+# name: <cell-element>
+# type: scalar
+-0.1915187710847548
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.2897681967465164 -0.1915187710847548
+
+# name: <cell-element>
+# type: scalar
+0.5418874373531299
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.1915187710847548 0.5418874373531299
+
+# name: <cell-element>
+# type: scalar
+-0.8881518375364174
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.5418874373531299 -0.8881518375364174
+
+# name: <cell-element>
+# type: scalar
+0.4020378534099258
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8881518375364174 0.4020378534099258
+
+# name: <cell-element>
+# type: scalar
+0.8090877313929573
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.4020378534099258 0.8090877313929573
+
+# name: <cell-element>
+# type: scalar
+-0.5583045119137251
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.8090877313929573 -0.5583045119137251
+
+# name: <cell-element>
+# type: scalar
+0.1760410918986144
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.5583045119137251 0.1760410918986144
+
+# name: <cell-element>
+# type: scalar
+-0.8868786116073178
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.1760410918986144 -0.8868786116073178
+
+# name: <cell-element>
+# type: scalar
+-0.8151699077759502
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8868786116073178 -0.8151699077759502
+
+# name: <cell-element>
+# type: scalar
+0.6215193143781598
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ -0.8151699077759502 0.6215193143781598
+
+# name: <cell-element>
+# type: scalar
+0.9494390074912247
+
+# name: <cell-element>
+# type: cell
+# rows: 1
+# columns: 2
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 0.6215193143781598 0.9494390074912247
+
+# name: <cell-element>
+# type: scalar
+-0.2913241093259547
+
+
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+
+
+
