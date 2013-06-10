@@ -92,16 +92,9 @@ function out = tester8()
 
 	params = parameters();
 	params.pbackprop = 0;
-	noBackPropComp = cell(4,3);
-	for j=1:3
-		for p=1:4
-			params.populationSize = populationSize{p};
-			for i=1:3
-				params.generations = generations{i};
-				noBackPropComp{p,i} = gamain(params);
-			end
-		end
-		save(strcat('noBackPropComp',int2str(j),'.mat'), 'noBackPropComp');
-	end
+	params.populationSize = 100;
+	params.generations = 150;
+	noBackPropComp = gamain(params);
+	save('noBackPropComp.mat', 'noBackPropComp');
 
 endfunction
