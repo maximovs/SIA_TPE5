@@ -37,7 +37,7 @@ function net = gamain(properties)
     pop = cell(populationSize,1);
     for i = 1:populationSize
         sub.size = net.size;
-        sub.Ws = (rand(net.size,1) - 0.5)*10;
+        sub.Ws = (rand(net.size,1) - 0.5)*20;
         pop(i) = sub;
     end
     pop = updateFitness(net, pop, populationSize, txFun, beta);
