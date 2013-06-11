@@ -46,6 +46,9 @@ function net = gamain(properties)
     lastGeneration = 0;
     fitnessArray = cell(generations,1);
 
+    bestFitnessArray = zeros(1, 1);
+    subplot(1,1,1);
+    f = plot(bestFitnessArray, '-1; Best fitness;', bestFitnessArray, '-4; AVG fitness;', bestFitnessArray, '-1; Worst fitness;');
 
     for g = 1: generations
         lastGeneration = g;
@@ -62,7 +65,12 @@ function net = gamain(properties)
         pop = sortPopulation(pop, populationSize);
         fit = pop{1}.fitness;
         aux.best = fit;
-        aux.avg = pop{populationSize}.fitness/populationSize;
+        aux.avg = 0;
+        for i = 1:populationSize
+            aux.avg = aux.avg + pop{i}.fitness;
+        end
+        aux.avg = aux.avg / populationSize;
+        aux.worst = pop{populationSize}.fitness;
         fitnessArray(g) = aux;
 
         %Metodo de corte
@@ -101,13 +109,22 @@ function net = gamain(properties)
                 break;
             endif   
         endif
+
+        bestFitnessArray = zeros(lastGeneration+1, 1);
+        avgFitnessArray = zeros(lastGeneration+1, 1);
+        worstFitnessArray = zeros(lastGeneration+1, 1);
+        for i = 1:lastGeneration
+            bestFitnessArray(i+1) = fitnessArray{i}.best;
+            avgFitnessArray(i+1) = fitnessArray{i}.avg;
+            worstFitnessArray(i+1) = fitnessArray{i}.worst;
+        end
+
+        set(f,'XData',[0:lastGeneration])
+        set(f(1),'YData', bestFitnessArray)
+        set(f(2),'YData', avgFitnessArray)
+        set(f(3),'YData', worstFitnessArray)
+        refreshdata
+        drawnow
     end
     net = putWs(net,pop{1}.Ws);
-
-    bestFitnessArray = zeros(lastGeneration, 1);
-    for i = 1:lastGeneration
-        bestFitnessArray(i) = fitnessArray{i}.best  ;
-    end
-    subplot(1,1,1);
-    plot(1:lastGeneration, bestFitnessArray, '-4; Fitness;');
 endfunction
