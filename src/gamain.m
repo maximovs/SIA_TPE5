@@ -130,6 +130,11 @@ function net = gamain(properties)
         set(f(3),'YData', worstFitnessArray)
         refreshdata
         drawnow
+
+
+
     end
     net = putWs(net,pop{1}.Ws);
+    net.avgError = pop{1}.avgError;
+    net.fitness = pop{1}.fitness;
 endfunction

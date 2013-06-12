@@ -9,5 +9,6 @@ function newNet = calculateFitness(net,txFun,beta)
     end
     avgError = error/size(trainSet,1);
     net.fitness = getFitnessFromError(avgError);
+    net.avgError = avgError;
     newNet=net;
 endfunction
