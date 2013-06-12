@@ -41,14 +41,14 @@ function net = gamain(properties)
         pop(i) = sub;
     end
     pop = updateFitness(net, pop, populationSize, txFun, beta);
-    pop = setAccumFitness(pop, populationSize);
     pop = sortPopulation(pop, populationSize);
+    pop = setAccumFitness(pop, populationSize);
     lastGeneration = 0;
     fitnessArray = cell(generations,1);
 
     bestFitnessArray = zeros(1, 1);
     subplot(1,1,1);
-    f = plot(bestFitnessArray, '-1; Best fitness;', bestFitnessArray, '-4; AVG fitness;', bestFitnessArray, '-1; Worst fitness;');
+    f = plot(bestFitnessArray, '-2; Best fitness;', bestFitnessArray, '-4; AVG fitness;', bestFitnessArray, '-1; Worst fitness;');
 
     for g = 1: generations
         lastGeneration = g;
@@ -61,8 +61,8 @@ function net = gamain(properties)
         pmut = mutAdaptation*pmut;
 
         pop = updateFitness(net, pop, populationSize, txFun, beta);
-        pop = setAccumFitness(pop, populationSize);
         pop = sortPopulation(pop, populationSize);
+        pop = setAccumFitness(pop, populationSize);
         fit = pop{1}.fitness;
         aux.best = fit;
         aux.avg = 0;
@@ -70,7 +70,12 @@ function net = gamain(properties)
             aux.avg = aux.avg + pop{i}.fitness;
         end
         aux.avg = aux.avg / populationSize;
-        aux.worst = pop{populationSize}.fitness;
+        aux.worst = 99999999;
+        for i = 1:populationSize
+            if pop{i}.fitness < aux.worst
+                aux.worst = pop{i}.fitness;
+            endif
+        end
         fitnessArray(g) = aux;
 
         %Metodo de corte

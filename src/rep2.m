@@ -1,4 +1,4 @@
-function newPop = rep2(epochs, pop, populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, selMixCriteria, selMixN)
+function newPop = rep2(epochs, pop, populationSize, toReplace, selCriteria, repCriteria, crossover, pcross, mutation, pmut, pbackprop, totalFit, txFun, beta, net, generation, selMixCriteria, selMixN)
     K = toReplace;
     if rem(K, 2) == 1
         K = K-1;
@@ -6,7 +6,7 @@ function newPop = rep2(epochs, pop, populationSize, toReplace, selCriteria, repC
     children = cell(K,1);
     sel = cell(2,1);
     %selecciono K con algún método.
-    parents = feval(strcat('sel', selCriteria), pop, populationSize, K, totalFit, selMixN, selMixCriteria);
+    parents = feval(strcat('sel', selCriteria), pop, populationSize, K, totalFit, generation, selMixN, selMixCriteria);
     for i = 1:K/2
         sel{1}=parents{i*2-1};
         sel{2}=parents{i*2};
@@ -28,6 +28,6 @@ function newPop = rep2(epochs, pop, populationSize, toReplace, selCriteria, repC
             children{i} = backProp(children{i},txFun,beta,net, epochs);
         endif
     end
-    survivors = feval(strcat('sel', selCriteria), pop, populationSize, populationSize-K, totalFit, selMixN, selMixCriteria);
+    survivors = feval(strcat('sel', selCriteria), pop, populationSize, populationSize-K, totalFit, generation, selMixN, selMixCriteria);
     newPop = [children; survivors];
 endfunction
